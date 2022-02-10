@@ -1,0 +1,27 @@
+@import "mixins";
+@import "reset";
+@import "vars";
+@import "ex1";
+@import "ex2";
+@import "ex3";
+
+body {
+    background: $color--secondary;
+    font-family:'Roboto', sans-serif;
+}
+.exercise, .footer {
+    width: 100%;
+    padding: 2em;
+    background: $color--primary;
+    border-bottom: 10px solid $color--black;
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+.footer{
+    margin-top: 20em;
+    border-top: 10px solid $color--black;
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+
+

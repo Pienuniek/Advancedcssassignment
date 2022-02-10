@@ -1,0 +1,57 @@
+
+/*fancy card*/
+.card {
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 4fr 1fr 1fr 1.5fr;
+  width: 60%;
+  max-width: 450px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35),
+    -2px -2px 5px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  &__footer{
+    grid-column: 1 / -1;
+    grid-row: 3 / -1;
+    background: #686de0;
+    text-align: center;
+  }
+  &__image {
+    grid-column: 2 / 3;
+    grid-row: 2 /4;
+    width: 100%;
+    border: 6px solid white;
+    border-radius: 50%;
+    z-index: 50;
+  }
+  &__body {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    padding: 2rem;
+    padding-top: 3rem;
+    color: #777;
+    font-size: 2.5vw;
+    line-height: 2.5rem;
+  }
+  &__name {
+    grid-column: 1 /-1;
+    grid-row: -2 /-1;
+    margin-top: 4.5em;
+    padding-bottom: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2.5vw;
+    letter-spacing: 4px;;
+  }
+  &__url {
+    text-decoration: none;
+    color: #c3cfe2;
+  }
+}
+
+
+
+

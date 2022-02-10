@@ -1,0 +1,5 @@
+@mixin somed-transition() {
+    transition-duration: 300ms;
+    transition-property: right;
+    transition-timing-function: ease-in;
+}
